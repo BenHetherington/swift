@@ -14,6 +14,8 @@
 // CHECK:   mutating func test2(_: Int32, _ varargs: Any...)
 // CHECK: }
 
+// CHECK-NOT: func takesDeclTypePointer
+
 // CHECK: func lvalueReference<T>(_ ref: inout T)
 // CHECK: func constLvalueReference<T>(_: T)
 // CHECK: func forwardingReference<T>(_: inout T)
